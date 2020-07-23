@@ -1,5 +1,6 @@
+using namespace std;
 int main ()
 {
 cout<<"HELLO WORLD";
-retuen 1;
+return 1;
 }
