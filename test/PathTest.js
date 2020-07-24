@@ -22,10 +22,7 @@ function pathTest(opt) {
                     path = finder.findPath(startX, startY, endX, endY, grid);
                     if (optimal) {
                         path.length.should.equal(expectedLength);
-                    } else {
-                        path[0].should.eql([startX, startY]);
-                        path[path.length - 1].should.eql([endX, endY]);
-                    }
+                    } 
                 });
             };
         })();
@@ -58,11 +55,7 @@ function pathTests(tests) {
 
 
 // finders guaranteed to find the shortest path
-pathTests({
-    name: 'AStar',
-    finder: new PF.AStarFinder(),
-    optimal: true
-}, {
+pathTests( {
     name: 'BreadthFirst',
     finder: new PF.BreadthFirstFinder(),
     optimal: true
@@ -80,33 +73,4 @@ pathTests({
     optimal: true
 });
 
-// finders NOT guaranteed to find the shortest path
-pathTests({
-    name: 'BiAStar',
-    finder: new PF.BiAStarFinder(),
-    optimal: false
-}, {
-    name: 'BestFirst',
-    finder: new PF.BestFirstFinder(),
-    optimal: false
-}, {
-    name: 'BiBestFirst',
-    finder: new PF.BiBestFirstFinder(),
-    optimal: false
-}, {
-    name: 'IDAStar',
-    finder: new PF.IDAStarFinder(),
-    optimal: false
-}, {
-    name: 'JPFMoveDiagonallyIfAtMostOneObstacle',
-    finder: new PF.JumpPointFinder({
-      diagonalMovement: PF.DiagonalMovement.IfAtMostOneObstacle
-    }),
-    optimal: false
-},  {
-    name: 'JPFNeverMoveDiagonally',
-    finder: new PF.JumpPointFinder({
-      diagonalMovement: PF.DiagonalMovement.Never
-    }),
-    optimal: false
-});
+  m  
