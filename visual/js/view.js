@@ -14,11 +14,11 @@ var View = {
             'stroke-opacity': 0.2,
         },
         start: {
-            fill: '#0d0',
+            fill: '#129fae',
             'stroke-opacity': 0.2,
         },
         end: {
-            fill: '#e40',
+            fill: '#bb3500',
             'stroke-opacity': 0.2,
         },
         opened: {
@@ -26,11 +26,11 @@ var View = {
             'stroke-opacity': 0.2,
         },
         closed: {
-            fill: '#afeeee',
+            fill: '#eeafcf',
             'stroke-opacity': 0.2,
         },
         failed: {
-            fill: '#ff8888',
+            fill: '#ffa688',
             'stroke-opacity': 0.2,
         },
         tested: {
