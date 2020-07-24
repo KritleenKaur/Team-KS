@@ -16,7 +16,9 @@ The time complexity of this algorithm is O(V^2).
 
 #include<iostream>
 #include<stdio.h>
+	
 using namespace std;
+
 #define INFINITY 9999
 #define max 5
 
@@ -28,7 +30,7 @@ void dijkstra(int G[max][max],int n,int startnode);
 
 int main() 
 {
-   int G[max][max]={{0,1,0,3,10},{1,0,5,0,0},{0,5,0,2,1},{3,0,2,0,6},{10,0,1,6,0}, };
+   int G[max][max]={{0,1,0,3,10},{1,0,5,0,0},{0,5,0,2,1},{3,0,2,0,6},{10,0,1,6,0}};
    int n=5;
    int u=0;
    dijkstra(G,n,u);
@@ -493,7 +495,7 @@ int main( int argc, char** argv)
 
 Breadth First Search Algorithm
 
-Breadth First Search Algorithm can be used to find the path from a given source to a givn destination. It's time complexoty is O(V+E).
+Breadth First Search Algorithm can be used to find the path from a given source to a givn destination. Its time complexity is O(V+E).
 
 Program:
 
